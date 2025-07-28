@@ -1,42 +1,13 @@
-<html lang="en">
-	<body>
-		<header class="header">
-			<div class="container">
-				<div class="header-content"></div>
-			</div>
-		</header>
-
-		<!--Hero Section-->
-		<section class="hero">
-			<div class="hero-background">
-				<div class="hero-overlay"></div>
-			</div>
-			<div class="container">
-				<div class="hero-content">
-					<h2>CHRISTIAN JOSHUA SALAPATE</h2>
-					<p>Licensed Electronics Technician, Web Developer</p>
-					<a href="#contact" class="cta-button">Contact Me</a>
-				</div>
-			</div>
-		</section>
-
-		<!--Services Section-->
-		<section>
-			<div class="container">
-				<h2>Our Electrical Services</h2>
-				<div class="services-grid">
-					<div class="service-card">
-						<div class="service-icon">icon here</div>
-						<h3>Residential Wiring</h3>
-						<p>Complete home electrical installations, rewiring and</p>
-					</div>
-					<div class="service-card"></div>
-					<div class="service-card"></div>
-					<div class="service-card"></div>
-					<div class="service-card"></div>
-					<div class="service-card"></div>
-				</div>
-			</div>
-		</section>
-	</body>
-</html>
+<!-- src/routes/+page.svelte -->
+<section class="flex min-h-screen flex-col items-center justify-center bg-gray-950 px-4 text-white">
+	<h1 class="mb-4 text-center text-5xl font-extrabold">Your Name</h1>
+	<p class="mb-6 text-center text-xl text-gray-300">
+		Web Developer | Electronics Tech | Lifelong Learner
+	</p>
+	<a
+		href="/contact"
+		class="rounded-lg bg-indigo-600 px-6 py-3 font-semibold transition hover:bg-indigo-700"
+	>
+		Contact Me
+	</a>
+</section>
