@@ -24,6 +24,21 @@
 				"Communication is key and it's a paramount value of mine. I believe in transparency and constructive communication above all else. This helps me develop deep relationships and ensures my effectiveness and productivity in any work space with any team."
 		}
 	];
+
+	function previewResume() {
+		const fileUrl = '/downloads/SalapateCV.pdf';
+		window.open(fileUrl, '_blank');
+	}
+
+	function downloadResume() {
+		const fileUrl = '/downloads/SalapateCV.pdf';
+		const link = document.createElement('a');
+		link.href = fileUrl;
+		link.download = 'SalapateCV.pdf';
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	}
 </script>
 
 <main class="flex flex-1 flex-col p-4">
@@ -189,5 +204,36 @@
 			<p>Scroll to see more &rarr;</p>
 		</div>
 		<p class="mx-auto">So why not invest?</p>
+
+		<section id="resume" class="mt-20 flex flex-col items-center gap-6">
+			<h3 class="text-center text-2xl font-semibold sm:text-3xl md:text-4xl">
+				Want the full scoop?
+			</h3>
+			<p class="text-center text-base sm:text-lg md:text-xl">
+				You can download my resume or preview it in your browser.
+			</p>
+
+			<div class="flex flex-wrap justify-center gap-4">
+				<!-- Preview Button -->
+				<button
+					on:click={previewResume}
+					type="button"
+					class="poppins group rounded-full bg-blue-600 px-6 py-3 text-white shadow-md transition hover:bg-blue-700 sm:text-lg md:text-xl"
+				>
+					<i class="fa-solid fa-eye mr-2"></i>
+					Preview Resume
+				</button>
+
+				<!-- Download Button -->
+				<button
+					on:click={downloadResume}
+					type="button"
+					class="poppins group rounded-full bg-violet-700 px-6 py-3 text-white shadow-md transition hover:bg-violet-800 sm:text-lg md:text-xl"
+				>
+					<i class="fa-solid fa-download mr-2"></i>
+					Download Resume
+				</button>
+			</div>
+		</section>
 	</section>
 </main>
