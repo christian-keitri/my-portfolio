@@ -1,10 +1,21 @@
 <script>
 	import Step from './Step.svelte';
-
 	let steps = [
-		{ name: 'SmolBob Store', icon: 'fa-solid fa-cart-shopping' },
-		{ name: 'Habit Tracker', icon: 'fa-solid fa-list-check' },
-		{ name: 'Music App', icon: 'fa-solid fa-music' }
+		{
+			name: 'SmolBob Store',
+			icon: 'fa-solid fa-cart-shopping',
+			href: 'https://github.com/christian-keitri/my-app'
+		},
+		{
+			name: 'Habit Tracker',
+			icon: 'fa-solid fa-list-check',
+			href: 'https://github.com/christian-keitri/habit_tracker'
+		},
+		{
+			name: 'Music App',
+			icon: 'fa-solid fa-music',
+			href: 'https://github.com/christian-keitri/music'
+		}
 	];
 
 	let benefits = [
@@ -49,8 +60,8 @@
 				<span class="poppins text-violet-400">Developer</span>
 			</h2>
 			<p class="text-base sm:text-lg md:text-xl">
-				My <span class="poppins text-violet-400"> favorite tech</span> includes JavaScript (Node.js or
-				SvelteKit), TailwindCss, Flutter, + PostgresSQL.
+				My <span class="poppins text-violet-400"> favorite tech</span> includes JavaScript, Node.js,
+				NestJS Svelte, Flutter, TailwindCss, PostgresSQL, Docker.
 			</p>
 			<a
 				class="blueShadow poppins group relative mx-auto cursor-pointer overflow-hidden rounded-full bg-white px-6 py-3 text-base text-slate-950 sm:text-lg md:text-xl lg:mr-auto"
@@ -68,7 +79,7 @@
 				src="/images/profile.png"
 				alt=""
 				role="presentation"
-				class="z-[2] max-h-[70vh] object-cover"
+				class="z-[2] max-h-[70vh] rounded-full border-4 border-white object-cover"
 			/>
 		</div>
 	</section>
@@ -93,25 +104,24 @@
 		<div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-10">
 			<Step step={steps[0]}>
 				<p>
-					SmolBob Store is an online store flatform created with <strong class="text-violet-400">
-						Flutter</strong
-					>
+					<strong class="text-violet-400">SmolBob Store</strong> is a modern e-commerce platform
+					built using
+					<strong class="text-violet-400">Flutter</strong>, designed to deliver a fast, smooth, and
+					responsive shopping experience across both Android and iOS devices.
 				</p>
 			</Step>
 			<Step step={steps[1]}>
 				<p>
-					The Habit Tracker is an online store flatform created with <strong
-						class="text-violet-400"
-					>
-						Flutter</strong
-					>
+					<strong class="text-violet-400">The Habit Tracker</strong> is a Flutter-powered app that lets
+					users track both good and bad habits, with features like reminders, notes, progress charts,
+					and a clean, user-friendly interface.
 				</p>
 			</Step>
 			<Step step={steps[2]}>
 				<p>
-					The Music App is an online store flatform created with <strong class="text-violet-400">
-						Flutter</strong
-					>
+					<strong class="text-violet-400">The Music App</strong> is a Spotify-style clone built with
+					<strong class="text-violet-400">Flutter</strong> for the frontend and a custom Python backend
+					for streaming and user management.
 				</p>
 			</Step>
 		</div>
@@ -152,7 +162,7 @@
 			<table class="rounded bg-white text-center text-slate-700">
 				<thead class={'border-b border-solid border-slate-200  '}>
 					<tr class="">
-						<th />
+						<th></th>
 						<th class="p-2 px-4 whitespace-nowrap">Candidate #1</th>
 						<th class="p-2 px-4 whitespace-nowrap">Candidate #2</th>
 						<th class="p-2 px-4 whitespace-nowrap">Candidate #3</th>
@@ -171,7 +181,7 @@
 					</tr>
 					<tr class="border-b border-solid border-slate-200">
 						<td class="border-r border-solid border-white py-4 pr-8 pl-4 text-sm font-semibold">
-							Dedication
+							Analytical
 						</td>
 						<td><i class="fa-solid fa-xmark text-slate-500"></i></td>
 						<td><i class="fa-solid fa-check text-slate-500"></i></td>
@@ -180,7 +190,7 @@
 					</tr>
 					<tr class="border-b border-solid border-slate-200">
 						<td class="border-r border-solid border-white py-4 pr-8 pl-4 text-sm font-semibold">
-							Dedication
+							Detail-oriented
 						</td>
 						<td><i class="fa-solid fa-xmark text-slate-500"></i></td>
 						<td><i class="fa-solid fa-check text-slate-500"></i></td>
@@ -189,7 +199,7 @@
 					</tr>
 					<tr class="border-b border-solid border-slate-200">
 						<td class="border-r border-solid border-white py-4 pr-8 pl-4 text-sm font-semibold">
-							Dedication
+							Collaborative
 						</td>
 						<td><i class="fa-solid fa-xmark text-slate-500"></i></td>
 						<td><i class="fa-solid fa-check text-slate-500"></i></td>
